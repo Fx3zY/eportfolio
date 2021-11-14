@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap");
+
+* {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.everything {
+  width: 75%;
+  margin: 0 auto;
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: purple 1px solid;
+    .nav-bar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 40rem;
+        a {
+          font-weight: 900;
+          text-decoration: none;
+          color: rgb(24, 24, 24);
+          letter-spacing: 0.25rem;
+          transition: all 0.3s ease 0s;
+          &:hover {
+            color: purple;
+          }
+        }
+      }
+      .logo {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        color: rgb(24, 24, 24);
+
+        span {
+          transition: all 0.3s ease 0s;
+          text-shadow: 0 1px 2px;
+          &:hover {
+            padding: 0 1rem;
+            cursor: pointer;
+            color: purple;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* About me */
+
+.about__me {
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  .left-col {
+    width: 50%;
+    text-align: center;
+    h1 {
+      letter-spacing: 4px;
+      font-weight: 900;
+      span {
+        color: purple;
+      }
+    }
+    p {
+      line-height: 1.75rem;
+      width: 50%;
+      color: purple;
+      margin: 0 auto;
+    }
+  }
+  .right-col {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.about__bottom-button {
+  text-align: center;
+  margin-top: 15rem;
+  i {
+    padding: 0.5rem;
+    border: 0.125px solid black;
+    border-radius: 40%;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      cursor: pointer;
+      color: purple;
+    }
+  }
+}
